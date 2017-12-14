@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #9fd4db;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.header .text {
+    position: absolute;
+    display: flex;
+    top: 0;
+}
+
+.santa {
+    position: relative;
+}
+
+.santa img {
+    position: relative;
+    height: 50vh;
+    padding-left:45vw;
+    /*bottom: 0;*/
+}
+
+.container {
+    position: relative;
+    background: white;
+    z-index: 1;
+}
+
+.container:before {
+    position: absolute;
+    content: "";
+    top: -12vh;
+    left: -10vw;
+    width: 120vw;
+    height: 50vh;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.containerText {
+    position: relative;
+    padding: 0 23vw;
+    z-index: 22;
+}
+
+.containerVideo {
+
+}
